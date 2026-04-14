@@ -17,12 +17,12 @@
         <input id="name" formControlName="name" />
         <label for="email">Email</label>
         <input id="email" formControlName="email" />
-        <btn-primary 
-          btn-text="se inscreva"
-          variant="secondary"
-          (submit)="onSubmit()"
-          [disabled]="!newForm.valid"
-           >
+        <btn-primary btn-text="se inscreva"
+        variant="secondary"
+        (submit)="onSubmit()"
+        [disabled]="!newForm.valid"
+        [loading]="loading()"
+        >
         </btn-primary>
     </form>
 
